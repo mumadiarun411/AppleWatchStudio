@@ -1,0 +1,59 @@
+/* Custom CSS for Image Styling */
+.preview-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensures the image maintains its aspect ratio */
+  max-width: 300px; /* Prevents the image from becoming too large */
+}
+
+.options-container button img {
+  width: 100px; /* Fixed width for smaller images */
+  height: 100px; /* Fixed height to maintain uniformity */
+  object-fit: cover; /* Crops the image to fit within the set dimensions */
+  margin-bottom: 0.5rem;
+}
+
+.options-container button {
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.options-container button:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.options-container button:focus {
+  outline: none;
+  border: 2px solid #3b82f6; /* Focus ring with blue border */
+}
+
+.app-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+footer {
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
